@@ -7,9 +7,16 @@
  * 
 */
 
+
 function uniq(arr) {
-    // Напишите код здесь
+    let uniq = []
+    uniq = arr.filter(function(item, index) {
+        return arr.indexOf(item) === index
+    });
+    return uniq
+    // console.log(uniq)
 }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

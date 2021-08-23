@@ -10,7 +10,8 @@
 */
 
 function findVowels(str) {
-    // Напишите код здесь
+    let vovels = str.replace(/[^аяоёуюыиэе]/gi, '')
+    return vovels.length
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

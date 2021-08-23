@@ -14,7 +14,12 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+    let word = str.toLowerCase().replace(/[^а-яa-z]/gi, '')
+    console.log(word)
+    let wordReverse = word.split('').reverse().join('');
+    if (word === wordReverse) {
+        return true;
+    } else return false
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
@@ -23,10 +28,15 @@ console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
 console.log(palindrome('привет')); // false
 
-/*
+console.log(palindrome('т ! о, п .о ?т'));
+
+
+console.log(palindrome('О, лета тело!'));
+
+/*;
  * Бонус. Задача для любознательных. Пусть функция принимает на вход любую строку,
  * но пробелы и знаки препинания не учитывает. Например:
- * 
+ *
  * palindrome('О, лета тело!'); // true
- * 
+ *
 */
