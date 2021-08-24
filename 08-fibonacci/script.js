@@ -9,7 +9,11 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    let fibonacciMas = [0, 1];
+    for (i = 2; i < n; i++) {
+        fibonacciMas.push(fibonacciMas[i - 1] + fibonacciMas[i - 2]);
+    };
+    return fibonacciMas[n - 1]
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

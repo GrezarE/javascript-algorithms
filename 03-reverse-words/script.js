@@ -16,4 +16,3 @@ function reverseWords(str) {
 
 console.log(reverseWords('всегда много путей достичь цель есть')); // "есть цель достичь путей много всегда"
 console.log(reverseWords('испробовать их все должны вы')); // "вы должны все их испробовать"
-console.log(reverseWords('испробовать их, все должны вы'))

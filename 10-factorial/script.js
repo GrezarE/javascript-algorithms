@@ -8,7 +8,14 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    let nMass = []
+    for (let i = 1; i <= n; i++) {
+        nMass.push(i)
+    }
+    nMass = nMass.reduce(function (mult, value){
+        return mult * value;
+    }, 1)
+    return nMass
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
@@ -16,3 +23,5 @@ function factorial(n) {
 console.log(factorial(0)); // 1
 console.log(factorial(1)); // 1
 console.log(factorial(6)); // 720
+
+// 

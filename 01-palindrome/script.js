@@ -14,9 +14,9 @@
 */
 
 function palindrome(str) {
-    let word = str.toLowerCase().replace(/[^а-яa-z]/gi, '')
+    const word = str.toLowerCase().replace(/[^а-яa-z]/gi, '')
     console.log(word)
-    let wordReverse = word.split('').reverse().join('');
+    const wordReverse = word.split('').reverse().join('');
     if (word === wordReverse) {
         return true;
     } else return false

@@ -10,7 +10,7 @@
 */
 
 function findVowels(str) {
-    let vovels = str.replace(/[^аяоёуюыиэе]/gi, '')
+    const vovels = str.replace(/[^аяоёуюыиэе]/gi, '')
     return vovels.length
 }
 
@@ -19,3 +19,4 @@ function findVowels(str) {
 console.log(findVowels('здравствуй')); // 2
 console.log(findVowels('привет')); // 2
 console.log(findVowels('хеллоу')); // 3
+console.log(findVowels('')); 
