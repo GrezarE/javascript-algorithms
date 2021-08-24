@@ -7,9 +7,12 @@
  * 
 */
 
+
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    let newMass = [...new Set(arr1)].filter(item => arr2.includes(item));
+    return newMass
 }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

@@ -11,6 +11,7 @@
 
 function findVowels(str) {
     const vovels = str.replace(/[^аяоёуюыиэе]/gi, '')
+    console.log(vovels)
     return vovels.length
 }
 

@@ -6,8 +6,26 @@
  * 
 */
 
+function isPrime(n) {
+    if (n === 2) {
+        return true
+    } else if (n < 2 || n % 2 === 0) {
+        return false
+    } else if (n > 2) {
+        for (let i = 3; i * i <= n; i += 2)
+            if (n % i === 0) return false;
+        return true;
+    }
+}
+
 function primes(num) {
-    // Напишите код здесь
+    let numMass = []
+    for (i = 2; i <= num; i++) {
+        if (isPrime(i)) {
+            numMass.push(i)
+        }
+    }
+    return numMass
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

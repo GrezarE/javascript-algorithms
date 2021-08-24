@@ -20,11 +20,10 @@ function fizzBuzz(num) {
             console.log('buzz')
         } else {
             console.log(i)
-
         }
     }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(fizzBuzz(15));
+console.log(fizzBuzz(5));
